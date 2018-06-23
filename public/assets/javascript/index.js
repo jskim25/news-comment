@@ -54,8 +54,7 @@ $(document).ready(function() {
     var emptyAlert = $(
       [
         "<div class='alert alert-warning text-center'>",
-        "<h4>There are no articles. To scrape, click</h4>",
-        "<h4><a class='scrape-new'>HERE</a></h4>",
+        "<h4>There are no articles. Please try SCRAPING first.</h4>",
         "</div>",
       ].join("")
     );
