@@ -53,7 +53,7 @@ $(document).ready(function() {
   function renderEmpty() {
     var emptyAlert = $(
       [
-        "<div class='alert alert-warning text-center'>",
+        "<div class='alert alert-primary text-center'>",
         "<h4>There are no articles. Please try SCRAPING first.</h4>",
         "</div>",
       ].join("")
