@@ -11,7 +11,7 @@ var scrape = function() {
       var summary = $(this).children(".summary").text().trim();
       var url = $(this).children(".story-heading").children("a").attr("href");
       
-      if (head && sum && url) {
+      if (head && summary && url) {
         var newHeadline = head.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
         var newSummary = summary.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
 
@@ -27,5 +27,4 @@ var scrape = function() {
   });
 };
 
-// Export the function, so other files in our backend can use it
 module.exports = scrape;
